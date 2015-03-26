@@ -1,0 +1,26 @@
+type: map
+mapping:
+  "sandbox":
+    type: int
+    required: yes
+  "api":
+    type: map
+    required: yes
+    mapping:
+      "root":
+        type: str
+        required: no
+        pattern: /^\w.*\/$/ # alphabet始まりで、最後は"/"で終わる
+  "android":
+    type: map
+    required: no
+    mapping:
+      "package":
+        type: str
+        required: yes
+      "version_name":
+        type: str
+        required: yes
+      "version_code":
+        type: int
+        required: yes

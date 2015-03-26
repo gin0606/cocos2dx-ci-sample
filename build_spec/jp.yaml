@@ -1,0 +1,7 @@
+sandbox: 0
+api:
+  root: api-root-for-release/
+android:
+  package: app.release.package
+  version_name: 1.0.0
+  version_code: 1

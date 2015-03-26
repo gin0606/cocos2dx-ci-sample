@@ -1,0 +1,55 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    CFPropertyList (2.2.8)
+    activesupport (4.2.1)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    addressable (2.3.7)
+    colored (1.2)
+    facter (2.4.1)
+      CFPropertyList (~> 2.2.6)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
+    i18n (0.7.0)
+    json (1.8.2)
+    kwalify (0.7.2)
+    libxml-ruby (2.8.0)
+    mini_portile (0.6.2)
+    minitest (5.5.1)
+    multipart-post (2.0.0)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+    octokit (3.8.0)
+      sawyer (~> 0.6.0, >= 0.5.3)
+    rake (10.4.2)
+    sawyer (0.6.0)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
+    thread_safe (0.3.5)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    xcodeproj (0.23.0)
+      activesupport (>= 3)
+      colored (~> 1.2)
+    xcpretty (0.1.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  facter
+  faraday
+  faraday_middleware
+  kwalify
+  libxml-ruby
+  nokogiri
+  octokit
+  rake
+  xcodeproj
+  xcpretty

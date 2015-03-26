@@ -1,0 +1,125 @@
+### rake taskで追加される管理したくないファイル
+/tmp
+
+### bundle install で追加されるファイル
+.bundle/
+vendor/bundle
+
+### proj.android/build_native.py で追加されるファイル
+*/proj.android/assets/
+*/proj.android/libs/**/*.so
+*/proj.android/libs/**/gdb*
+*/proj.android/obj/
+
+### ant release で追加されるファイル
+*/cocos2d/cocos/platform/android/java/bin/
+*/cocos2d/cocos/platform/android/java/gen/
+**/proj.android/bin/
+**/proj.android/gen/
+
+### AppCode/IntelliJ/AndroidStudio
+.idea/
+*.iml
+
+### cocos コマンドで生成されるファイル
+*/bin/
+*/cocos2d/build/build/
+*/cocos2d/cocos/platform/android/java/local.properties
+**/local.properties
+*/proj.ios_mac/build/
+
+
+### https://raw.github.com/github/gitignore/master/Global/Xcode.gitignore
+
+# build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.xcuserstate
+
+### CocoStudio backup files
+*/SampleProjectUI/Backup/
+*/SampleProjectUI/Export/
+*/SampleProjectUI/Ruler/
+*/SampleProjectUI/PList.Dir
+
+### https://raw.github.com/github/gitignore/master/Global/OSX.gitignore
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+# Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### https://raw.github.com/github/gitignore/097db81c08b138dea7cb031eb18eeb16afe44bdf/Global/Eclipse.gitignore
+
+**/proj.android/*.pydevproject
+**/proj.android/.metadata
+**/proj.android/.gradle
+**/proj.android/bin/
+**/proj.android/tmp/
+**/proj.android/*.tmp
+**/proj.android/*.bak
+**/proj.android/*.swp
+**/proj.android/*~.nib
+**/proj.android/local.properties
+**/proj.android/.settings/
+**/proj.android/.loadpath
+**/platform/android/java/.settings/
+
+# External tool builders
+**/proj.android/.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+**/proj.android/*.launch
+
+# CDT-specific
+**/proj.android/.cproject
+
+# PDT-specific
+**/proj.android/.buildpath
+
+# sbteclipse plugin
+**/proj.android/.target
+
+# TeXlipse plugin
+**/proj.android/.texlipse
+
+### https://raw.github.com/github/gitignore/2299367b8f8114e85ddcfe56beaaf1be8cb4d5ec/Gradle.gitignore
+
+.gradle
+
+# build/ は必要な物があるので、個別に指定する
+*/build/
+*/proj.android/build/
+*/cocos2d/cocos/platform/android/java/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Ignore AdobeBridge Files
+.BridgeSort
